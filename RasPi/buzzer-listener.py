@@ -30,7 +30,6 @@ def addPlayer(buzzer):
     # if a player buzzes in again, alert, and make sure we want to overwrite
     if buzzer in players.keys():
         print '%s is already registered to buzzer %d!' % (players[buzzer], buzzer)
-
         # there's actually input here
         readIn = raw_input('Press Enter to ignore, or type a new player name!: ')
         if readIn == '':
@@ -83,7 +82,7 @@ def gameTime():
 
 
 if __name__ == "__main__":
-    fakeBuzzerSetup()
+    #fakeBuzzerSetup()
     if not debugMode:
         buzzerSetup()
         print '*'*20
