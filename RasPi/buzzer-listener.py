@@ -64,7 +64,7 @@ def playRandomBuzzserSound():
     mp3file = buzzerSoundDir + '/' + mp3file
     mp3 = mp3play.load(mp3file)
     #import ipdb; ipdb.set_trace()
-    mp3.play()
+    mp3.play(3)
     time.sleep(3)
 
 def gameTime():
